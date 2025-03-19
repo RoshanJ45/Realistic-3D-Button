@@ -1,0 +1,49 @@
+<html>
+<body>
+<button class="button">Press Me</button>
+<style>
+    body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: #aaa;
+margin: 0;
+}
+.button {
+font-size: 22px;
+font-weight: bold;
+padding: 15px 50px;
+color: white;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+position: relative;
+background: linear-gradient(145deg, #ff0077, #7a00ff);
+box-shadow: 2px 2px 0 #5a0055, 3px 3px 5px #555;
+transition: all 0.2s ease-in-out;
+}
+.button::before {
+content: "";
+position: absolute;
+top: 0px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+background: linear-gradient(145deg, #ff3385,
+#8a00e0);
+border-radius: 8px;
+z-index: -1;
+box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.7);
+}
+.button:hover {
+transform: translateY(-1px);
+}
+.button:active {
+transform: translateY(1px);
+box-shadow: 1px 1px 0 #5a0055, 2px 2px 5px
+rgba(0, 0, 0, 0.2);
+}
+</style>
+</body>
+</html>
